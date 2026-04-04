@@ -1,0 +1,227 @@
+.social{
+width:40px;
+height:40px;
+display:flex;
+align-items:center;
+justify-content:center;
+border:1px solid #22d3ee;
+border-radius:50%;
+transition:0.3s;
+}
+
+.social:hover{
+background:#22d3ee;
+color:black;
+transform:translateY(-3px);
+}
+
+.nav-link{
+position: relative;
+transition: color 0.3s;
+}
+
+.nav-link:hover{
+color:#22d3ee;
+}
+
+/* glowing underline */
+
+.nav-link::after{
+content:"";
+position:absolute;
+left:0;
+bottom:-6px;
+width:0%;
+height:3px;
+background:#22d3ee;
+box-shadow:0 0 10px #22d3ee;
+transition:0.3s;
+}
+
+.nav-link:hover::after{
+width:100%;
+}
+/* GLOBAL */
+
+body{
+background: radial-gradient(circle at left,#0f3b5f,#020617);
+font-family: ui-sans-serif, system-ui;
+scroll-behavior:smooth;
+color:white;
+}
+
+*{
+transition:all .25s ease;
+}
+
+
+/* PROFILE IMAGE GLOW */
+
+.glow{
+padding:10px;
+border-radius:50%;
+background:linear-gradient(180deg,#00e5ff,#006eff);
+box-shadow:0 0 60px #00e5ff,0 0 120px rgba(0,229,255,0.4);
+transition:0.4s;
+}
+
+.glow:hover{
+transform:scale(1.05);
+box-shadow:0 0 80px #00e5ff,0 0 140px rgba(0,229,255,0.6);
+}
+
+
+/* SOCIAL ICONS */
+
+.social{
+width:40px;
+height:40px;
+display:flex;
+align-items:center;
+justify-content:center;
+border:1px solid #22d3ee;
+border-radius:50%;
+transition:0.3s;
+background:rgba(255,255,255,0.02);
+backdrop-filter:blur(6px);
+font-size:18px;
+}
+
+.social:hover{
+background:#22d3ee;
+color:black;
+transform:translateY(-4px) scale(1.05);
+box-shadow:0 0 15px #22d3ee;
+}
+
+
+/* BUTTONS */
+
+.btn-primary{
+background:#22d3ee;
+color:black;
+padding:10px 24px;
+border-radius:6px;
+font-weight:600;
+transition:0.3s;
+box-shadow:0 0 12px rgba(34,211,238,0.4);
+}
+
+.btn-primary:hover{
+background:#06b6d4;
+transform:translateY(-3px);
+box-shadow:0 0 25px #22d3ee;
+}
+
+.btn-outline{
+border:1px solid #22d3ee;
+padding:10px 24px;
+border-radius:6px;
+transition:0.3s;
+}
+
+.btn-outline:hover{
+background:#22d3ee;
+color:black;
+transform:translateY(-3px);
+box-shadow:0 0 20px #22d3ee;
+}
+
+
+/* NAVBAR */
+
+.nav-link{
+position:relative;
+transition:color 0.3s;
+}
+
+.nav-link:hover{
+color:#22d3ee;
+}
+
+/* glowing underline */
+
+.nav-link::after{
+content:"";
+position:absolute;
+left:0;
+bottom:-6px;
+width:0%;
+height:3px;
+background:#22d3ee;
+box-shadow:0 0 10px #22d3ee;
+transition:0.3s;
+}
+
+.nav-link:hover::after{
+width:100%;
+}
+
+
+/* CUSTOM THEME COLORS */
+
+.bg-darkbg{
+background:#020617;
+}
+
+.bg-card{
+background:#0f172a;
+}
+
+.text-primary{
+color:#22d3ee;
+}
+
+.border-primary{
+border-color:#22d3ee;
+}
+
+.hover\:border-primary:hover{
+border-color:#22d3ee;
+}
+
+
+/* CARD HOVER EFFECT */
+
+.card-hover{
+transition:0.35s;
+}
+
+.card-hover:hover{
+transform:translateY(-8px);
+box-shadow:0 10px 35px rgba(34,211,238,0.25);
+}
+
+
+/* GLOW SHADOW */
+
+.hover\:shadow-glow:hover{
+box-shadow:0 0 30px rgba(34,211,238,0.5);
+}
+
+
+/* INPUT FIELDS */
+
+input, textarea{
+transition:0.25s;
+}
+
+input:focus, textarea:focus{
+box-shadow:0 0 12px rgba(34,211,238,0.5);
+}
+
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar{
+width:8px;
+}
+
+::-webkit-scrollbar-track{
+background:#020617;
+}
+
+::-webkit-scrollbar-thumb{
+background:#22d3ee;
+border-radius:4px;
+}
